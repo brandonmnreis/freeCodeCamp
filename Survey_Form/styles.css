@@ -1,0 +1,84 @@
+body { 
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: #CC5500;
+    color: #98c3ee;
+    font-family: Gill Sans, sans-serif;
+    font-size: 16px;
+}
+
+body::before {
+    content: "";
+    background-image: url('https://media.istockphoto.com/id/1066947218/vector/tropical-seamless-pattern-with-oranges-fruit-repeated-background-vector-bright-print-for.jpg?s=612x612&w=0&k=20&c=x7SdGhBR5MhdTaFY6FDJQpEx997VS4_E8uBssE_DyxU=');
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: .08;
+}
+
+label {
+    display: block;
+    margin: 0.25rem 0;
+}
+
+h1, p {
+    margin: 0.5em auto;
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    width: 60vw;
+    padding-bottom: 2em;
+}
+
+fieldset {
+    border: 0;
+    margin: 10px 0 0 0;
+    border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+legend {
+    margin: 0 0.5em 0 0;
+}
+
+input, textarea, select {
+    width: 100%;
+    margin: 10px 0 0 0;
+    min-height: 2em;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+input, textarea {
+    background-color: #C0B2C9;
+    border: 1px solid #C0B2C9;
+    color: #FFFFFF;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    min-width: 300px;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    font-family: Gill Sans, sans-serif;
+    background-color: #3B3B4F;
+    border-color: white;
+  }

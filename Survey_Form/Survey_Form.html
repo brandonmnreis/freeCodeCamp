@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <body>
+            <h1 id="title">Quick Survey</h1>
+            <p id="description">Thank you for taking the time to visit our <strong>INBOUND</strong> booth this year!</p>
+            <form id="survey-form">
+                <fieldset>
+                    <label id="name-label">First & Last Name<input id="name" type="text" required placeholder="e.g. John Doe"></label>
+                    <label id="email-label">Email<input id="email" type="email" required placeholder="e.g. johndoe@gmail.com"></label>
+                    <label id="number-label">Postal Code<input id="number" type="number" min="00000" max="99999" placeholder="00000"></label>
+                </fieldset>
+                <fieldset>
+                    <label for="dropdown-label">How did you FIRST hear about us?
+                        <select id="dropdown" name="dropdown">
+                            <option value="">select one</option>
+                            <option value="social-media">Social Media</option>
+                            <option value="trade-show">Trade Show</option>
+                            <option value="referring=partner">Referring Partner</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Do you plan on returning to the trade show next year?</legend>
+                        <label for="yes"><input id="yes" type="radio" class="inline" name="returning" value="yes" checked> Yes</label>
+                        <label for="no"><input id="no" type="radio" class="inline" name="returning" value="no"> No</label>
+                </fieldset>
+                <fieldset>
+                    <legend>What will your company prioritize into the next fiscal year? <br> (Check all that apply)</legend>
+                            <input type="checkbox" name="priorities" class="inline" value="martech">Increased MarTech Efficiency<br>
+                            <input type="checkbox" name="priorities" class="inline" value="revenue">Refined Revenue Reporting<br>
+                            <input type="checkbox" name="priorities" class="inline" value="pipeline">Improved Pipeline Visibility<br>
+                            <input type="checkbox" name="priorities" class="inline" value="social">Optimized Ad Spend<br>
+                            <input type="checkbox" name="priorities" class="inline" value="support">Faster Ticket Lead Time<br>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label for="obstacles">What were your operation's goals & challenges last fiscal year?:
+                        <textarea id="obstacles" name="obstacles" rows="3" cols="30" placeholder="Last year, our operation's goals & challenges included... "></textarea>
+                    </label>
+                </fieldset>
+                <input id="submit" type="submit" value="Submit">
+            </form>
+        </body>
+    </head>
+</html>
